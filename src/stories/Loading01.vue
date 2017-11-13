@@ -58,7 +58,9 @@
         this.windowWidth = window.innerWidth
         this.windowHeight = window.innerHeight
       },
-      complete(item) {
+      complete() {
+        console.log("hi");
+        snake.play(0)
         // snake
         //   .to(item, 0.07, {
         //     backgroundColor: "white"
@@ -68,7 +70,8 @@
     },
     mounted() {
       window.addEventListener('resize', this.handleResize)
-      snake = new TimelineMax({ repeat: -1 })
+      snake = new TimelineMax({ onComplete: this.complete, repeat: -1 })
+
       antiSnake = new TimelineMax({ repeat: -1 })
       var boxArray = []
 
@@ -77,16 +80,18 @@
         var currentItem = `#box-top-${i}`
         snake
           .to(currentItem, 0.07, {
-            backgroundColor: "blue",
-            onComplete: this.complete,
-            onCompleteParams: [currentItem]
+            backgroundColor: "blue"
           })
+
+        antiSnake
+          .to(currentItem, 0.07, {
+            backgroundColor: "white"
+          }, i * 0.07 + 0.07 * 5)
 
       }
 
-      // for (var i = 1; i < this.rowCount; i++) {
-      //   boxArray.push(`#box-top-${i}`)
-      // }
+
+
 
       // snake
       //   .staggerTo(boxArray, 0.3,
@@ -103,7 +108,8 @@
       //   .to(`#box-top-${i}`, 0.05, {backgroundColor: "white"})
       // }
 
-      snake.play()
+      // snake.play()
+      // antiSnake.play()
 
     },
     beforeDestroy() {
