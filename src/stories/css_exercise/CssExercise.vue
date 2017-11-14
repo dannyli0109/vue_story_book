@@ -1,29 +1,27 @@
 <template lang="html">
-  <div>
-    <body>
-        <title>Natours | Exciting tours for adventurous people</title>
-        <header class="header">
-            <div class="logo-box">
-                <img src="./img/logo-white.png" alt="Logo" class="logo">
-            </div>
+  <body class="body">
+    <title>Natours | Exciting tours for adventurous people</title>
+    <header class="header">
+        <div class="logo-box">
+            <img src="./img/logo-white.png" alt="Logo" class="logo">
+        </div>
 
-            <div class="text-box">
-                <h1 class="heading-primary">
+        <div class="text-box">
+            <h1 class="heading-primary">
                 <span class="heading-primary-main">Outdoors</span>
                 <span class="heading-primary-sub">is where life happens</span>
             </h1>
-            </div>
-            
-        </header>   
-    </body>
-  </div>
+        </div>
+           
+    </header>
+  </body>
 </template>
 
 <script>
 export default {};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed");
 

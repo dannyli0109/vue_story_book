@@ -21,28 +21,28 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 
 
 storiesOf('Button', module)
-  .add('Ghost Button to Equaliser Loading Animation', () => ({
-    template: '<button-01></button-01>'
-  }));
+    .add('Ghost Button to Equaliser Loading Animation', () => ({
+        template: '<button-01></button-01>'
+    }));
 
 
 storiesOf('Loading', module)
-  .add('Snake outline loading', () => ({
-    template: '<loading-01></loading-01>'
-  }));
+    .add('Snake outline loading', () => ({
+        template: '<loading-01></loading-01>'
+    }));
 
- storiesOf('Component Exercise', module)
+storiesOf('Component Exercise', module)
     .add("Component exercise 01", () => ({
         template: '<component-01></component-01>'
     }))
     .add("Form", () => ({
         template: '<app-form></app-form>'
     }))
-    .add("Directive", () =>({
+    .add("Directive", () => ({
         template: '<directive></directive>'
-    }))
+    }));
 
-  storiesOf('Css', module)
+storiesOf('Css', module)
     .add('Project1', () => ({
-      template: '<css-exercise-01></css-exercise-01>'
+        template: '<css-exercise-01></css-exercise-01>'
     }))
