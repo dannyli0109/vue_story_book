@@ -6,6 +6,15 @@ import Button01 from './Button01.vue';
 
 import Loading01 from './Loading01.vue';
 
+import ComponentExercise01 from './Component01/ComponentExercise01.vue'
+
+import AppForm from './AppForm.vue'
+
+import Directive from './Directive.vue'
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+
 
 
 
@@ -19,3 +28,14 @@ storiesOf('Loading', module)
   .add('Snake outline loading', () => ({
     template: '<loading-01></loading-01>'
   }));
+
+ storiesOf('Component Exercise', module)
+    .add("Component exercise 01", () => ({
+        template: '<component-01></component-01>'
+    }))
+    .add("Form", () => ({
+        template: '<app-form></app-form>'
+    }))
+    .add("Directive", () =>({
+        template: '<directive></directive>'
+    }))

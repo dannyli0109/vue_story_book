@@ -1,16 +1,16 @@
 <template>
-  <div class="container">
-    <div class="button" id="button01" @mouseenter="onButton01Hover" @mouseleave="onButton01Mouseout" @click="onButton01Click">
-      <div class="button__content" id="button01--content">{{ buttonName }}</div>
-      <div class="container--loading">
-        <div class="button__loading" id="button01--loading">
-          <template v-for="i in 7">
-            <div class="button__loading__content" :id="'button-loading-' + i"></div>
-          </template>
+    <div class="button01">
+      <div class="button" id="button01" @mouseenter="onButton01Hover" @mouseleave="onButton01Mouseout" @click="onButton01Click">
+        <div class="button__content" id="button01--content">{{ buttonName }}</div>
+        <div class="container--loading">
+          <div class="button__loading" id="button01--loading">
+            <template v-for="i in 7">
+              <div class="button__loading__content" :id="'button-loading-' + i"></div>
+            </template>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -137,7 +137,9 @@
   * {
     box-sizing: border-box;
   }
-  .container {
+
+
+  .button01 {
     @include center-content;
   }
   .button {
