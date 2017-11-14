@@ -68,26 +68,27 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                userInfo: {
-                    firstName: "",
-                    lastName: "",
-                    email: "",
-                    password: ""
-                },
-                storeInDatabase: "Yes",
-                submitted: false
-            }
-        },
-        methods: {
-            submit() {
-                this.submitted = true
-            }
-        }
+export default {
+  data() {
+    return {
+      userInfo: {
+        firstName: "",
+        lastName: "",
+        email: "",
+        password: ""
+      },
+      storeInDatabase: "Yes",
+      submitted: false
+    };
+  },
+  methods: {
+    submit() {
+      this.submitted = true;
     }
+  }
+};
 </script>
 
-<style>
+<style scoped>
+
 </style>

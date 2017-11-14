@@ -12,24 +12,24 @@
 </template>
 
 <script>
-import Quote from './Quote.vue'
+import Quote from "./Quote.vue";
 
 export default {
-    components: {
-        quote: Quote
-    },
-    props: {
-        "quotes" : Array,
-        "onRemoveQuote" : Function
-    }
-}
+  components: {
+    quote: Quote
+  },
+  props: {
+    quotes: Array,
+    onRemoveQuote: Function
+  }
+};
 </script>
 
 <style lang="css">
-    .padding {
-        padding: 20px 20px;
-    }
-    .margin {
-        margin: 2px 2px;
-    }
+.padding {
+  padding: 20px 20px;
+}
+.margin {
+  margin: 2px 2px;
+}
 </style>

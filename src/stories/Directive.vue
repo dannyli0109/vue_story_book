@@ -13,26 +13,27 @@
 </template>
 
 <script>
-    export default {
-        directives: {
-            'my-on': {
-                bind(el, binding, vNode) {
-                    el.addEventListener(binding.arg, binding.value)
-                }
-            }
-        },
-        methods: {
-            onClick(e) {
-                console.log("hi");
-            }
-        },
-        data() {
-            return {
-                clicked: false
-            }
-        }
+export default {
+  directives: {
+    "my-on": {
+      bind(el, binding, vNode) {
+        el.addEventListener(binding.arg, binding.value);
+      }
     }
+  },
+  methods: {
+    onClick(e) {
+      console.log("hi");
+    }
+  },
+  data() {
+    return {
+      clicked: false
+    };
+  }
+};
 </script>
 
 <style>
+
 </style>

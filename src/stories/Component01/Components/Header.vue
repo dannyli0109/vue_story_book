@@ -11,9 +11,10 @@
 
 <script>
 export default {
-    props: ['quote-percentage']
-}
+  props: ["quote-percentage"]
+};
 </script>
 
 <style lang="css">
+
 </style>

@@ -11,28 +11,28 @@
 
 <script>
 export default {
-    props: {
-        "on-add": Function
-    },
-    data() {
-        return {
-            quote: ""
-        }
-    },
-    methods: {
-        clicked() {
-            this.onAdd(this.quote)
-            this.quote=""
-        }
+  props: {
+    "on-add": Function
+  },
+  data() {
+    return {
+      quote: ""
+    };
+  },
+  methods: {
+    clicked() {
+      this.onAdd(this.quote);
+      this.quote = "";
     }
-}
+  }
+};
 </script>
 
 <style lang="css" scoped>
-    .add-quote {
-        width: 50%;
-    }
-    .center {
-        text-align: center;
-    }
+.add-quote {
+  width: 50%;
+}
+.center {
+  text-align: center;
+}
 </style>

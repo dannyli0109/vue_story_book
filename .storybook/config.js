@@ -13,6 +13,8 @@ import AppForm from '../src/stories/AppForm.vue'
 
 import Directive from '../src/stories/Directive.vue'
 
+import CssExercise from '../src/stories/css_exercise/CssExercise.vue'
+
 
 
 // Register custom components.
@@ -21,6 +23,7 @@ Vue.component('loading-01', Loading01);
 Vue.component('component-01', ComponentExercise01);
 Vue.component('app-form', AppForm);
 Vue.component('directive', Directive);
+Vue.component('css-exercise-01', CssExercise);
 
 function loadStories() {
   // You can require as many stories as you need.
