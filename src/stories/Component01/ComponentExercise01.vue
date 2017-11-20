@@ -10,6 +10,8 @@
 import Header from "./Components/Header.vue";
 import AddQuote from "./Components/AddQuote.vue";
 import Quotes from "./Components/Quotes.vue";
+// import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap-theme.css";
 
 export default {
   components: {
@@ -43,7 +45,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .add-quote {
   margin: 0 auto;
 }

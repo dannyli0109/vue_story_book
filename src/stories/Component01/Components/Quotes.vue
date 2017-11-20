@@ -25,7 +25,9 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="scss" scoped>
+@import "../../bootstrap";
+
 .padding {
   padding: 20px 20px;
 }

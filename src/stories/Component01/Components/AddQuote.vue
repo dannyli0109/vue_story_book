@@ -28,7 +28,9 @@ export default {
 };
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@import "../../bootstrap";
+
 .add-quote {
   width: 50%;
 }

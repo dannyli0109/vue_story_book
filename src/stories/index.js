@@ -14,10 +14,6 @@ import Directive from './Directive.vue'
 
 import CssExercise from './css_exercise/CssExercise.vue'
 
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
-
-
 
 
 storiesOf('Button', module)

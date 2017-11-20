@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "file": "^0.2.2",
     "gsap": "^1.20.3",
     "vue": "^2.4.4"
   },
