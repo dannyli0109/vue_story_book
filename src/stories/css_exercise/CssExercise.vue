@@ -10,6 +10,8 @@
             <stories></stories>
             <booking></booking>
             <app-footer></app-footer>
+            <navigation></navigation>
+            <popup></popup>
             
         </main>
     </body>
@@ -23,6 +25,9 @@ import Tours from "./Components/Tours.vue";
 import Stories from "./Components/Stories.vue";
 import Booking from "./Components/Booking.vue";
 import Footer from "./Components/Footer.vue";
+import Navigation from "./Components/Navigation.vue";
+import Popup from "./Components/Popup.vue";
+
 export default {
   components: {
     appHeader: Header,
@@ -31,7 +36,9 @@ export default {
     tours: Tours,
     stories: Stories,
     booking: Booking,
-    appFooter: Footer
+    appFooter: Footer,
+    navigation: Navigation,
+    popup: Popup
   }
 };
 </script>
@@ -60,4 +67,5 @@ export default {
 @import "scss/layout/header";
 @import "scss/layout/grid";
 @import "scss/layout/footer";
+@import "scss/layout/popup";
 </style>

@@ -23,7 +23,7 @@
                         <div class="card__price-only">Only</div>
                         <div class="card__price-value">{{tour.price}}</div>
                     </div>
-                    <a href="#" class="button button--white">Book now!</a>
+                    <a href="#popup" class="button button--white">Book now!</a>
                 </div>
             </div>
 
