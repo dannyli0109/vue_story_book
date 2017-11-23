@@ -4,13 +4,13 @@
         <app-header></app-header>
 
         <main>
+            <navigation></navigation>
             <about-session></about-session>
             <features></features>
             <tours></tours>
             <stories></stories>
             <booking></booking>
             <app-footer></app-footer>
-            <navigation></navigation>
             <popup></popup>
             
         </main>
