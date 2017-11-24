@@ -14,6 +14,8 @@ import Directive from './Directive.vue'
 
 import CssExercise from './css_exercise/CssExercise.vue'
 
+import Carousel from './Carousel/Carousel.vue'
+
 
 
 storiesOf('Button', module)
@@ -41,4 +43,9 @@ storiesOf('Component Exercise', module)
 storiesOf('Css', module)
     .add('Project1', () => ({
         template: '<css-exercise-01></css-exercise-01>'
+    }))
+
+storiesOf('Carousel', module)
+    .add("Carousel", () => ({
+        template: '<carousel></carousel>'
     }))

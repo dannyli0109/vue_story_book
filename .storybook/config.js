@@ -15,6 +15,8 @@ import Directive from '../src/stories/Directive.vue'
 
 import CssExercise from '../src/stories/css_exercise/CssExercise.vue'
 
+import Carousel from '../src/stories/Carousel/Carousel.vue'
+
 
 
 // Register custom components.
@@ -24,10 +26,11 @@ Vue.component('component-01', ComponentExercise01);
 Vue.component('app-form', AppForm);
 Vue.component('directive', Directive);
 Vue.component('css-exercise-01', CssExercise);
+Vue.component('carousel', Carousel);
 
 function loadStories() {
-  // You can require as many stories as you need.
-  require('../src/stories');
+    // You can require as many stories as you need.
+    require('../src/stories');
 }
 
 configure(loadStories, module);

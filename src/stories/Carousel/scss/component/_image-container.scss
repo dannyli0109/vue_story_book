@@ -1,0 +1,90 @@
+.carousel {
+    width: 450px;
+    height: 300px;
+
+    @for $i from 0 through 3 {
+        &__image-#{$i + 1} {
+            position: absolute;
+            width: 450px;
+            height: 300px;
+            left: #{$i * 450}px;
+        }
+    }
+
+    &__mask {
+        position: absolute;
+        width: 450px;
+        height: 300px;
+        overflow: hidden;
+    }
+}
+
+.image-container {
+    position: absolute;
+    width: 450*4px;
+    height: 300px;
+    transition: 1s;
+}
+
+
+
+
+.navigation {
+    height: 100%;
+    font-size: 50px;
+    color: rgba(white, 0.5);
+    position: relative;
+
+
+    &__left {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        user-select: none;
+        transition: 0.2s;
+        
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    &__right {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        user-select: none;
+        
+        transition: 0.2s;
+        
+        &:hover {
+            color: black;
+        }
+    }
+
+    &__buttons {
+        position: absolute;
+        // background-color: orangered;
+        bottom: 10%;
+        left: 50%;
+        width: 77px;
+        height: 16px;
+        transform: translateX(-50%);
+
+        
+
+        &__button {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 2px solid rgba(white, 0.5);
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+}
