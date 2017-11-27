@@ -1,0 +1,23 @@
+.moving-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    // overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+.image {
+    height: 95vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    
+}
+
+.outer-container {
+    height: 95vh;
+}

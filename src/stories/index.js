@@ -16,6 +16,8 @@ import CssExercise from './css_exercise/CssExercise.vue'
 
 import Carousel from './Carousel/Carousel.vue'
 
+import MovingMask from './MovingMask/MovingMask.vue'
+
 
 
 storiesOf('Button', module)
@@ -48,4 +50,9 @@ storiesOf('Css', module)
 storiesOf('Carousel', module)
     .add("Carousel", () => ({
         template: '<carousel></carousel>'
+    }))
+
+storiesOf('MovingMask', module)
+    .add("MovingMask", () => ({
+        template: '<moving-mask></moving-mask>'
     }))

@@ -17,6 +17,8 @@ import CssExercise from '../src/stories/css_exercise/CssExercise.vue'
 
 import Carousel from '../src/stories/Carousel/Carousel.vue'
 
+import MovingMask from '../src/stories/MovingMask/MovingMask.vue'
+
 
 
 // Register custom components.
@@ -27,6 +29,7 @@ Vue.component('app-form', AppForm);
 Vue.component('directive', Directive);
 Vue.component('css-exercise-01', CssExercise);
 Vue.component('carousel', Carousel);
+Vue.component('moving-mask', MovingMask);
 
 function loadStories() {
     // You can require as many stories as you need.
