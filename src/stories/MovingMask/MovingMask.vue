@@ -1,36 +1,51 @@
 <template>
-    <div class="outer-container" @mousemove="mouseMove">
-        <div class="moving-mask" :style="{left: mousePosition.x, top: mousePosition.y}">
-            <img src="./img/nat-2-large.jpg" alt="" class="image" :style="{left: mousePosition.x, top: mousePosition.y}">
+    <div class="spinner">
+        <div class="circle-container circle-container--1">
+            <div class="spinner__circle spinner__circle--1"></div>
         </div>
+        <div class="circle-container circle-container--2">
+            <div class="spinner__circle spinner__circle--2"></div>
+        </div>
+        <div class="circle-container circle-container--3">
+            <div class="spinner__circle spinner__circle--3"></div>
+        </div>
+        <div class="circle-container circle-container--4">
+            <div class="spinner__circle spinner__circle--4"></div>
+        </div>
+        <div class="circle-container circle-container--5">
+            <div class="spinner__circle spinner__circle--5"></div>
+        </div>
+        <div class="circle-container circle-container--6">
+            <div class="spinner__circle spinner__circle--5"></div>
+        </div>
+        <div class="circle-container circle-container--7">
+            <div class="spinner__circle spinner__circle--5"></div>
+        </div>
+        <div class="circle-container circle-container--8">
+            <div class="spinner__circle spinner__circle--5"></div>
+        </div>
+        <div class="circle-container circle-container--9">
+            <div class="spinner__circle spinner__circle--5"></div>
+        </div>
+        <div class="circle-container circle-container--10">
+            <div class="spinner__circle spinner__circle--5"></div>
+        </div>
+        <div class="circle-container circle-container--11">
+            <div class="spinner__circle spinner__circle--5"></div>
+        </div>
+        <div class="circle-container circle-container--12">
+            <div class="spinner__circle spinner__circle--5"></div>
+        </div>
+
     </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      mousePosition: {
-        x: "50%",
-        y: "50%"
-      },
-      imagePosition: {
-        x: "50%",
-        y: "50%"
-      }
-    };
+    return {};
   },
-  methods: {
-    mouseMove(event) {
-      //   if (this.position) {
-      this.mousePosition.x = event.pageX + "px";
-      this.mousePosition.y = event.pageY + "px";
-
-      this.imagePosition.x = -event.pageX + "px";
-      this.imagePosition.y = -event.pageY + "px";
-      //   }
-    }
-  }
+  methods: {}
 };
 </script>
 
