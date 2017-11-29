@@ -16,7 +16,7 @@ body {
         width: 2px;
         height: 10px;
         position: absolute;
-        background-color: lightgrey;
+        background-color: rgb(231, 231, 231);
         left: 50%;
         transform: translateX(-50%);
         // border-radius: 50%;
@@ -33,5 +33,17 @@ body {
 }
 
 .current-dot {
-    background-color: rgb(138, 137, 137);
+    background-color: rgb(137, 137, 137);
+}
+
+.current-dot-light {
+    background-color: rgb(165, 165, 165);
+}
+
+.current-dot-lighter {
+    background-color: rgb(185, 185, 185);    
+}
+
+.current-dot-lightest {
+    background-color: rgb(201, 201, 201);    
 }
