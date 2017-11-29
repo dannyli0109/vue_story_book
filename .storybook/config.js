@@ -19,6 +19,8 @@ import Carousel from '../src/stories/Carousel/Carousel.vue'
 
 import MovingMask from '../src/stories/MovingMask/MovingMask.vue'
 
+import Spinner from '../src/stories/Spinner/Spinner.vue'
+
 
 
 // Register custom components.
@@ -30,6 +32,7 @@ Vue.component('directive', Directive);
 Vue.component('css-exercise-01', CssExercise);
 Vue.component('carousel', Carousel);
 Vue.component('moving-mask', MovingMask);
+Vue.component('spinner', Spinner);
 
 function loadStories() {
     // You can require as many stories as you need.

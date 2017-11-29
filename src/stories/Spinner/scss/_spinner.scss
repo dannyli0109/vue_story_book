@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    &__dot {
+        width: 2px;
+        height: 10px;
+        position: absolute;
+        background-color: lightgrey;
+        left: 50%;
+        transform: translateX(-50%);
+        // border-radius: 50%;
+    }
+}
+.dot-container {
+    height: 20px;
+    width: 10px;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: 50% 100%;
+}
+
+.current-dot {
+    background-color: rgb(138, 137, 137);
+}

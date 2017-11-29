@@ -18,6 +18,8 @@ import Carousel from './Carousel/Carousel.vue'
 
 import MovingMask from './MovingMask/MovingMask.vue'
 
+import Spinner from './Spinner/Spinner.vue'
+
 
 
 storiesOf('Button', module)
@@ -29,7 +31,10 @@ storiesOf('Button', module)
 storiesOf('Loading', module)
     .add('Snake outline loading', () => ({
         template: '<loading-01></loading-01>'
-    }));
+    }))
+    .add('Spinner', () => ({
+        template: '<spinner></spinner>'
+    }))
 
 storiesOf('Component Exercise', module)
     .add("Component exercise 01", () => ({
